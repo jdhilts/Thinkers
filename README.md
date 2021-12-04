@@ -1,2 +1,2 @@
 # Thinkers
-The front end of the Thinkers Blogger App
+The front end of the Thinkers blogger app.
