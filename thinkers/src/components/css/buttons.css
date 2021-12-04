@@ -1,0 +1,32 @@
+.buttons {
+	background-color: #EBF0FF;
+	margin-top: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+	border-radius: 0px;
+	color: #101840;
+	height: 40px;
+	min-width: 137px;
+	margin-bottom: 20px;
+}
+
+.cancel_button {
+	background-color: #F9DADA;
+	font-size: 15px;
+	border-radius: 0px;
+	color: #101840;
+	height: 40px;
+	min-width: 137px;
+}
+
+.button {
+	background-color: #EBF0FF;
+	margin-top: 20px;
+	font-size: 15px;
+	border-radius: 0px;
+	color: #101840;
+	height: 40px;
+	min-width: 137px;
+	margin-bottom: 20px;
+
+}
