@@ -19,7 +19,7 @@ const EditAccount =(props)=> {
 	const [formValues, setFormValues] = useState(null)
 
 	useEffect(()=> {
-		fetch(`https://nameless-spire-69225.herokuapp.com/profile/${props.id}`, {
+		fetch(`https://afternoon-temple-12069.herokuapp.com/profile/${props.id}`, {
 			headers:{
 				'Authorization':window.localStorage.getItem('token')
 			}
@@ -40,7 +40,7 @@ const EditAccount =(props)=> {
 
 	const onSubmit =(formValues, onSubmitProps)=> {
 		setFormValues(formValues)
-		fetch(`https://nameless-spire-69225.herokuapp.com/update_profile/${props.id}`, {
+		fetch(`https://afternoon-temple-12069.herokuapp.com/update_profile/${props.id}`, {
 			method: 'PUT',
 			mode: 'cors',
 			cache: 'no-cache',

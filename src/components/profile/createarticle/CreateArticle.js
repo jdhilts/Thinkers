@@ -24,7 +24,7 @@ const CreateArticle =(props)=> {
 
 	const onSubmit =(values, onSubmitProps)=> {
 		setLoading(true)
-		fetch(`https://nameless-spire-69225.herokuapp.com/create_article/${props.id}`, {
+		fetch(`https://afternoon-temple-12069.herokuapp.com/create_article/${props.id}`, {
 			method: 'POST',
 			mode: 'cors',
 			cache: 'no-cache',

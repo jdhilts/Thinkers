@@ -25,7 +25,7 @@ const EditArticleForm =(props)=> {
 
 	const onSubmit =(formValues, onSubmitProps)=> {
 		setFormValues(formValues)
-		fetch(`https://nameless-spire-69225.herokuapp.com/update_article/${props.article_id}`,{
+		fetch(`https://afternoon-temple-12069.herokuapp.com/update_article/${props.article_id}`,{
 			method: 'PATCH',
 			mode: 'cors',
 			cache: 'no-cache',

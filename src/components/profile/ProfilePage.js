@@ -12,7 +12,7 @@ const ProfilePage =(props)=> {
 
 	useEffect(()=> {
 		setLoading(true)
-		fetch(`https://nameless-spire-69225.herokuapp.com/profile/${props.id}`,{
+		fetch(`https://afternoon-temple-12069.herokuapp.com/profile/${props.id}`,{
 			headers:{
 				'Content-Type': 'application/json',
 				'Authorization': window.localStorage.getItem('token')

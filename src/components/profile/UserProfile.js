@@ -12,7 +12,7 @@ const UserProfile =(props)=> {
 
 	useEffect(()=> {
 		setLoading(true)
-		fetch(`https://nameless-spire-69225.herokuapp.com/articles/${props.id}`,{
+		fetch(`https://afternoon-temple-12069.herokuapp.com/articles/${props.id}`,{
 			headers:{
 				'Content-Type': 'application/json',
 				'Authorization': window.localStorage.getItem('token')
@@ -24,7 +24,7 @@ const UserProfile =(props)=> {
 	},[props.id])
 
 	useEffect(()=> {		
-		fetch(`https://nameless-spire-69225.herokuapp.com/photo/${props.id}`)
+		fetch(`https://afternoon-temple-12069.herokuapp.com/photo/${props.id}`)
 		.then(response => {return response.json()})
 		.then(photo => setPhoto(photo))
 		.catch(()=> console.log('User has no profile photo.'))
@@ -76,7 +76,7 @@ const UserProfile =(props)=> {
 						return(
 							<Avatar 
 							key={photo.id}
-							src={"https://nameless-spire-69225.herokuapp.com/images/"+photo.photo}
+							src={"https://afternoon-temple-12069.herokuapp.com/images/"+photo.photo}
 							id='photo' 
 							size={70} 
 							name={props.name} 

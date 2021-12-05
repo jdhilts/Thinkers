@@ -12,7 +12,7 @@ const ArticlePage =(props)=> {
 
 	useEffect(()=> {
 		setLoading(true)
-		fetch(`https://nameless-spire-69225.herokuapp.com/article/${props.article_id}`)
+		fetch(`https://afternoon-temple-12069.herokuapp.com/article/${props.article_id}`)
 		.then(response => {return response.json()})
 		.then(article => setArticle(article))
 		.catch(error => setError(error))
