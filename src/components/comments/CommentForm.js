@@ -20,7 +20,7 @@ const CommentForm =(props)=> {
 	})
 
 	const onSubmit =(values, onSubmitProps)=> {
-		fetch(`https://nameless-spire-69225.herokuapp.com/profile/${props.id}/article/${props.article_id}/comment`, {
+		fetch(`https://afternoon-temple-12069.herokuapp.com/profile/${props.id}/article/${props.article_id}/comment`, {
 			method: 'POST',
 			mode: 'cors',
 			cache: 'no-cache',

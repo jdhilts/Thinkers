@@ -15,14 +15,14 @@ const Article =(props)=> {
 	const [profilePhoto, setProfilePhoto] = useState([])
 
 	useEffect(()=> {
-		fetch(`https://nameless-spire-69225.herokuapp.com/comments/${props.article_id}`)
+		fetch(`https://afternoon-temple-12069.herokuapp.com/comments/${props.article_id}`)
 		.then(response => response.json())
 		.then(comments => setComments(comments))
 		.catch(error => setError('There are no comments.'))
 	},[props.article_id])
 
 	useEffect(()=> {
-		fetch(`https://nameless-spire-69225.herokuapp.com/photo/${props.id}`)
+		fetch(`https://afternoon-temple-12069.herokuapp.com/photo/${props.id}`)
 		.then(response => response.json())
 		.then(profilePhoto => setProfilePhoto(profilePhoto))
 		.catch(()=> console.log('No profile photo found.'))
@@ -66,7 +66,7 @@ const Article =(props)=> {
 					key={profilePhoto.id}
 					id='photo' 
 					size={70}
-					src={"http://localhost:3000/images/" + profilePhoto.photo}
+					src={"https://afternoon-temple-12069.herokuapp.com/images/" + profilePhoto.photo}
 					marginBottom={20} 
 					name={props.name} 
 					hashValue={props.id}/>

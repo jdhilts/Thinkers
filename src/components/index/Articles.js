@@ -10,7 +10,7 @@ const Articles =()=> {
 
 	useEffect(()=> {
 		setLoading(true)
-		fetch('https://nameless-spire-69225.herokuapp.com/')
+		fetch('https://afternoon-temple-12069.herokuapp.com/')
 		.then(response => {return response.json()})
 		.then(articles => setArticles(articles))
 		.catch(error => setError(error))

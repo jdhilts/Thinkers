@@ -18,7 +18,7 @@ const initialValues = {password: '', email: ''}
 	const [error, setError] = useState()
 
 	const onSubmit =(values, onSubmitProps)=> {
-		fetch(`https://nameless-spire-69225.herokuapp.com/reset_password/`, {
+		fetch(`https://afternoon-temple-12069.herokuapp.com/reset_password/`, {
 			method: 'PATCH',
 			mode: 'cors',
 			cache: 'no-cache',

@@ -19,7 +19,7 @@ const ForgotPassword =(props)=> {
 	const [navigate, setNavigate] = useState()
 
 	const onSubmit =(values, onSubmitProps)=> {
-		fetch('https://nameless-spire-69225.herokuapp.com/send_reset_email', {
+		fetch('https://afternoon-temple-12069.herokuapp.com/send_reset_email', {
 			method: 'POST',
 			mode: 'cors',
 			cache: 'no-cache',

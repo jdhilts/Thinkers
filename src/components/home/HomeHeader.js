@@ -9,6 +9,7 @@ const HomeHeader =(props)=> {
 		navigate('/', {replace: true})
 		window.location.reload(true)
 	}
+	
 	return(
 		<Pane 
 		id='heading_container' 

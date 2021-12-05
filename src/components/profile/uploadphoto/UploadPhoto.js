@@ -17,7 +17,7 @@ const UploadPhoto =(props)=> {
 	//Else Fetch http://localhost:3000/upload_photo/:id
 
 	useEffect(()=> {
-		fetch(`https://nameless-spire-69225.herokuapp.com/photo/${props.id}`,{
+		fetch(`https://afternoon-temple-12069.herokuapp.com/photo/${props.id}`,{
 			headers:{
 				'Content-Type': 'application/json',
 				'Authorization': window.localStorage.getItem('token')
@@ -58,7 +58,7 @@ const UploadPhoto =(props)=> {
 			.then(()=> {return navigate(`/profile/${props.id}`)})		
 			.catch(() => console.log('Something went wrong!'))
 		} else {
-			fetch(`https://nameless-spire-69225.herokuapp.com/upload_photo/${props.id}`, {
+			fetch(`https://afternoon-temple-12069.herokuapp.com/upload_photo/${props.id}`, {
 				method: 'POST',
 				mode: 'cors',
 				cache: 'no-cache',
