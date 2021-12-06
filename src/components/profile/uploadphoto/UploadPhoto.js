@@ -45,7 +45,7 @@ const UploadPhoto =(props)=> {
 		formData.append('photo', photo)
 
 		if(photoExist){
-			fetch(`https://nameless-spire-69225.herokuapp.com/update_photo/${props.id}`, {
+			fetch(`https://afternoon-temple-12069.herokuapp.com/update_photo/${props.id}`, {
 				method: 'PUT',
 				mode: 'cors',
 				cache: 'no-cache',
