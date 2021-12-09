@@ -9,7 +9,7 @@ const App =(props)=> {
 
 	useEffect(()=> {
 		const token = window.localStorage.getItem('token')
-		fetch('https://nameless-spire-69225.herokuapp.com/login', {
+		fetch('https://afternoon-temple-12069.herokuapp.com/login', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
