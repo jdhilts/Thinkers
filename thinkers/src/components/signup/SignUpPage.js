@@ -27,9 +27,9 @@ const SignUpPage =(props)=> {
 	const [navigate, setNavigate] = useState()
 
 	const onSubmit =(values, onSubmitProps)=> {
-		fetch('https://nameless-spire-69225.herokuapp.com/signup', {
+		fetch('https://afternoon-temple-12069.herokuapp.com/signup', {
 			method: 'POST',
-			mode: 'cors',
+			//mode: 'cors',
 			cache: 'no-cache',
 			headers: {
 				'Content-Type': 'application/json',

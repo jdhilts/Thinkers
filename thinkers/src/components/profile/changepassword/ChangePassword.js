@@ -19,7 +19,7 @@ const ChangePassword =(props)=> {
 	const [error, setError] = useState()
 
 	const onSubmit =(values, onSubmitProps)=> {
-		fetch(`https://nameless-spire-69225.herokuapp.com/update_password/${props.id}`, {
+		fetch(`https://afternoon-temple-12069.herokuapp.com/update_password/${props.id}`, {
 			method: 'PATCH',
 			mode: 'cors',
 			cache: 'no-cache',
