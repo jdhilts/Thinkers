@@ -11,9 +11,10 @@ const App =(props)=> {
 		const token = window.localStorage.getItem('token')
 		fetch('https://afternoon-temple-12069.herokuapp.com/login', {
 			method: 'POST',
-			'Access-Control-Allow-Origin': '*',
+			mode:'Cors',
 			headers: {
 				'Content-Type': 'application/json',
+				'Access-Control-Allow-Origin': 'https://afternoon-temple-12069.herokuapp.com/login',
 				'Authorization': token
 			}
 		})
