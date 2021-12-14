@@ -29,10 +29,8 @@ const SignUpPage =(props)=> {
 	const onSubmit =(values, onSubmitProps)=> {
 		fetch('https://afternoon-temple-12069.herokuapp.com/signup', {
 			method: 'POST',
-			mode: 'Cors',
 			cache: 'no-cache',
 			headers: {
-				'Access-Control-Allow-Origin': 'https://afternoon-temple-12069.herokuapp.com/signup',
 				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify(values),
