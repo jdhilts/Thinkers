@@ -28,7 +28,6 @@ const LoginPage =(props)=> {
 	const onSubmit =(values, onSubmitProps)=> {
 		fetch('https://afternoon-temple-12069.herokuapp.com/login', {
 			method: 'POST',
-			mode: 'cors',
 			cache: 'no-cache',
 			headers: {
 				'Content-Type': 'application/json',
